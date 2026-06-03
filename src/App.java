@@ -8,11 +8,13 @@ public class App {
     Caja<Integer> cajaEntero = new Caja<Integer>(2);
     Caja<Float> cajaFloat = new Caja<Float>(2.16f);
     Caja<Boolean> cajaBoolean = new Caja<Boolean>(false);
+
     //implementaciones de clase generica Par
     Par<Integer,String> cajaEnteroString = new Par<Integer,String>(1, "Luis");
     Par<String,Integer> cajaStringEntero = new Par<String,Integer>("Edad", 20);
     Par<String,Double> cajaStringDouble = new Par<String,Double>("Promedio", 8.75);
-
+    
+    //salida
     System.out.println("=== PRÁCTICA DE CLASES GENÉRICAS ===");
     System.out.println("--- Uso de Caja<T> ---");
     System.out.println("Caja de texto: " + cajaString.toString());
